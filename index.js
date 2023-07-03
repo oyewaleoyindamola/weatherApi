@@ -15,9 +15,9 @@ input.addEventListener("change", (e) =>{
     .then(data =>{
         console.log(data);
         cityname.textContent = data.name
-        display.textContent += data.main.humidity
-        description.textContent += data.weather[0].description
-        temperature.textContent += data.main.temp
+        display.textContent = data.main.humidity
+        description.textContent = data.weather[0].description
+        temperature.textContent  = data.main.temp
         
     })
 });
